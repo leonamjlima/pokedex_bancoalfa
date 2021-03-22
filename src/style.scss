@@ -1,0 +1,56 @@
+@import '@/assets/scss/index.scss';
+
+* { 
+    background-color: $cor1;
+    padding: 0; 
+    margin: 15;
+}
+
+#main {
+  display: grid;
+  grid-template-areas: "header header" 
+                       "article article";
+  grid-template-rows:  60px
+                       100vh;            
+}
+
+.mainHeader  { 
+    grid-area: header;       
+    margin-left: 10px;
+    margin-right: 10px;
+}
+  
+.mainArticle { 
+  display: grid;
+  grid-area: article;     
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 1200px) {
+  .mainArticle { 
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+  }        
+}
+
+@media screen and (max-width: 992px) {
+  .mainArticle { 
+    grid-template-columns: 1fr 1fr 1fr;  
+  }      
+}
+
+@media screen and (max-width: 768px) {
+  .mainArticle { 
+    grid-template-columns: 1fr 1fr;  
+  }    
+}
+
+
+.divPokeCard {
+  padding: 10px;
+}
+
+#edtSearch {
+  @include input-search;
+  width: 100%;
+  height: 90%;
+}

@@ -1,0 +1,37 @@
+@import '@/assets/scss/index.scss';
+
+* {
+    font-size: 18px;    
+  }
+  
+  .card {
+    background: $cor4;
+    width: 100%; /*250px;*/
+    height: 140px;
+    text-align: center;  
+  }
+  
+  .cardImg {
+    background: inherit;
+    height: 80%;  
+  }
+  
+  .cardTitle {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    background: inherit;
+    justify-content: space-between;
+    height: 20%;  
+  }
+  
+  .cardPokeName {
+    background: inherit;
+    color: $cor3;
+  }
+  
+  .cardPokeID {
+    background: inherit;
+    color:$cor3;
+  }
+  
